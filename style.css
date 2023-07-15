@@ -1,0 +1,111 @@
+body {
+  background: linear-gradient(45deg, #190361 0%, #b0f 100%);
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container,
+.container2 {
+  display: flex;
+  width: 40rem;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 0 0 1.2rem;
+  background-color: #fff;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.container2 {
+  width: 30rem;
+  padding: 4.8rem 6.4rem;
+}
+
+.container h1,
+.container2 h1 {
+  width: 25rem;
+  font-size: 2.8rem;
+  margin: 30px 0 0;
+}
+
+.container h3,
+.container2 h3 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+}
+
+.container img {
+  position: relative;
+  animation: slide 500ms linear infinite;
+}
+
+button {
+  border-radius: 0.4rem;
+  background: #ff9500;
+  border: none;
+  padding: 1.2rem;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  color: #fff;
+}
+
+.fortune {
+  background: #e4edf1;
+  position: relative;
+  margin: 12px 0;
+  animation: top-down 1s backwards;
+  box-shadow: 2px 2px 2px 0px rgba(85, 85, 85, 0.5);
+  padding: 0.5rem;
+}
+
+.container2 h3, .fortune{
+  font-family: "Dancing Script", sans-serif;
+}
+
+.hide {
+  display: none;
+}
+
+@keyframes slide {
+  0% {
+    left: 0;
+  }
+  25% {
+    left: 50px;
+  }
+  50% {
+    left: 0;
+  }
+  75% {
+    left: -50px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes top-down {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 25px;
+  }
+  100% {
+    top: 0;
+  }
+}
